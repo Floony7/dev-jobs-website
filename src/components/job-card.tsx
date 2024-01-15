@@ -2,7 +2,7 @@ import React from "react";
 
 const JobCard = () => {
   return (
-    <div className="relative mt-6 flex w-full flex-col rounded-md bg-white border border-blue-700 text-gray-700 shadow-md">
+    <div className="relative mt-2 flex w-full flex-col rounded-md bg-white border border-blue-700 text-gray-700 shadow-md">
       <div className="p-6">
         <h5 className="mb-2 block font-sans text-xl font-semibold leading-snug tracking-normal text-blue-gray-900 antialiased">
           UI/UX Review Check
