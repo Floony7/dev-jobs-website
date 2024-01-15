@@ -1,5 +1,6 @@
 import React from "react";
 
+// TODO: Currently card uses active style as border. Add functionality to toggle border colour
 const JobCard = () => {
   return (
     <div className="relative mt-2 flex w-full flex-col rounded-md bg-white border border-blue-700 text-gray-700 shadow-md">
