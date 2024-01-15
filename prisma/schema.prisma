@@ -1,0 +1,30 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+// For a production application, represent status and jobType as enums with a PostgreSQL database
+model Job {
+  id           Int     @id @default(autoincrement())
+  title        String
+  location     String
+  remuneration String
+  description  String
+  alert        String?
+  jobType      String // FULLTIME | PART_TIME | CONTRACT | TEMPORARY | PERMANENT
+  status       String? // NEW | URGENTLY_NEEDED
+}
+
+model Candidate {
+  id        Int    @id @default(autoincrement())
+  lastName  String
+  firstname String
+  email     String
+}
