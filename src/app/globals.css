@@ -20,3 +20,10 @@ body {
   color: rgb(var(--foreground-rgb));
   background: #fff;
 }
+
+.vertical-separator {
+  --border-clr: rgb(200, 200, 200);
+  border-left: 1px solid var(--border-clr);
+  border-right: 1px solid var(--border-clr);
+  width: 1px;
+}
