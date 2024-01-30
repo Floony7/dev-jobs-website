@@ -1,5 +1,5 @@
 import React from "react";
-import SearchInputs from "./header/search-inputs";
+import SearchInputs from "./search-inputs";
 
 const Hero = () => {
   return (

@@ -1,4 +1,4 @@
-import Hero from "@/components/hero";
+import Hero from "@/components/header/hero";
 import JobDetails from "@/components/job-details";
 import JobList from "@/components/job-list";
 

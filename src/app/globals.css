@@ -27,3 +27,7 @@ body {
   border-right: 1px solid var(--border-clr);
   width: 1px;
 }
+
+p {
+  @apply block font-sans text-base font-light leading-6 text-inherit antialiased;
+}
