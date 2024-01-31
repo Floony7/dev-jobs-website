@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useFormState } from "react-dom";
+import { createJob } from "@/actions/form-actions";
 
 const JobPostForm = () => {
   const [isUrgent, setIsUrgent] = useState(false);
@@ -20,7 +21,7 @@ const JobPostForm = () => {
   `);
 
   return (
-    <form className="mx-auto mt-16 max-w-xl sm:mt-20">
+    <form action={createJob} className="mx-auto mt-16 max-w-xl sm:mt-20">
       <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
         <section className="sm:col-span-2">
           <label
