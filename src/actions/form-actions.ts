@@ -19,16 +19,14 @@ export async function createJob(formData: FormData) {
         location: formData.get('location'),
         remuneration: formData.get('remuneration'),
         jobType: formData.get('job-type'),
-        descriptipn: formData.get('description'),
-        hiringMultiples: formData.get('hiring-multiple-candidates') ?? false,
-        isUrgent: formData.get('urgently-needed') ?? false,
+        description: formData.get('description'),
+        hiringMultiples: formData.get('hiring-multiple-candidates') === null ? false : true,
+        isUrgent: formData.get('urgently-needed') === null ? false : true,
     })
-   
+   console.log(formData);
     if (!result.success) {
-        console.log(result.error)
+        console.log(result.error.flatten().fieldErrors)
     }
-
-    // console.log(title, location, jobType, "IS_URGENT: ", isUrgent);
 
     revalidatePath('/');
 }
